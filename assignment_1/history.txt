@@ -1,0 +1,36 @@
+STEP 1 COMMANDS
+mkdir ./CTA200_2023 - MAKE FOLDER CALLED "CTA200_203"
+mkdir ./assignment_1 - MAKE FOLDER CALLED "assignment_1"
+touch README.md - CREATE FILE CALLED "README.me"
+vi README.md - OPEN README.md using vi and add title "CTA200 2023"
+
+STEP 2 COMMANDS
+cp Hello_world.c /mnt/scratch-lustre/aburggraf/CTA200_2023/assignment_1 
+?cp Hello_world.py /mnt/scratch-lustre/aburggraf/CTA200-2023/assignment_1
+
+STEP 3 COMMANDS
+mv Hello_world.c Hello_world_burggraf.c
+mv Hello_world.py Hello_world_burggraf.py
+
+STEP 4 COMMANDS
+module load gcc/5.4.0
+gcc Hello_world_burggraf.c
+mv a.out Hello_world.x
+
+STEP 5 COMMANDS
+./Hello_world.x - RUN C PROGRAM, OUTPUT IS "Hello world"
+python Hello_world_burggraf.py - RUN PYTHON FILE, OUTPUT IS ALSO "Hello world"
+
+STEP 6 COMMANDS
+vi Hello_world_burggraf.c - EDIT OUTPUT
+gcc Hello_world_burggraf.c - COMPLILE C CODE WITH NEW OUTPUT
+mv a.out Hello_world_burggraf.x - MAKE NEW EXECUTABLE
+./Hello_world_burggraf.x - RUN NEW EXECUTABLE, OUTPUT IS "Hello, Audrey Burggraf from C"
+
+vi Hello_world.burggraf.py - EDIT OUTPUT
+python Hello_world_burggraf.py - OUTPUT "Hello, Audrey Burggraf from Python"
+
+STEP 7 COMMANDS
+./Hello_world_burggraf.x > output_c.txt
+python Hello_world_burggraf.py > output_python.txt
+ 
